@@ -4,7 +4,8 @@
   "description": "Code Pair is tool that Developers use to find people in their immediate locations to work with on Projects. They can find people around them and schedule meetings, initiate projects, set a tracker on such projects, monitor their projects and see it all the way through to launch. Code pair will send constant reminders and notifications on Project and Tasks status.",
   "main": "app.js",
   "scripts": {
-    "start:dev": "nodemon app.js",
+    "start": "node server.js",
+    "devstart": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
