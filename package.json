@@ -4,6 +4,8 @@
   "description": "Code Pair is tool that Developers use to find people in their immediate locations to work with on Projects. They can find people around them and schedule meetings, initiate projects, set a tracker on such projects, monitor their projects and see it all the way through to launch. Code pair will send constant reminders and notifications on Project and Tasks status.",
   "main": "app.js",
   "scripts": {
+    "start": "node server.js",
+    "devstart": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,5 +16,16 @@
     "PostgreSQL"
   ],
   "author": "Emmanuel Odianosen .O.",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "pg": "^7.6.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.41.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
 }
