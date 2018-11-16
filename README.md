@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ascii-dev/maintenance-tracker.svg?branch=develop)](https://travis-ci.org/ascii-dev/maintenance-tracker)
+[![Build Status](https://travis-ci.com/emmaodia/entercodepair.svg?branch=master)](https://travis-ci.com/emmaodia/entercodepair)
 [![Coverage Status](https://coveralls.io/repos/github/ascii-dev/maintenance-tracker/badge.svg?branch=develop)](https://coveralls.io/github/ascii-dev/maintenance-tracker?branch=develop)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c961accccb9c57c80a68/maintainability)](https://codeclimate.com/github/ascii-dev/maintenance-tracker/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/c961accccb9c57c80a68/test_coverage)](https://codeclimate.com/github/ascii-dev/maintenance-tracker/test_coverage)
