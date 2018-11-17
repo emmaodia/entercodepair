@@ -10,4 +10,6 @@ router.get('/:postId', postsController.retrieve);
 
 router.put('/:postId', postsController.update);
 
+router.delete('/:postId', postsController.destroy);
+
 module.exports = router;

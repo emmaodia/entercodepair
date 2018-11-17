@@ -13,8 +13,8 @@ module.exports = {
   list(req, res) {
     return Post
     .all()
-    .then(posts => res.status(200).json(posts)
-    .catch(error => res.status(400).send(error)));
+    .then(posts => res.status(200).json(posts))
+    .catch(error => res.status(400).send(error));
   },
   retrieve(req, res) {
     return Post
@@ -47,5 +47,25 @@ module.exports = {
       .catch(error => res.status(400).json({error: error}));
     })
     .catch(error => res.status(400).json({error: error}));
+  },
+  destroy(req, res) {
+    return Post
+    .findById(req.params.postId)
+    then(post => {
+      if (!post) {
+        return res.status(404).json({
+          message: "Post not found"
+        })
+      }
+      return post
+      .destroy()
+      .then(() => res.status(200).send({ message: "Post successfully deleted!" }))
+      .catch(error => res.status(400).json({
+        error : error
+      }))
+    })
+    .catch(error => res.status(400).json({
+      error : error
+    }))
   },
 };
