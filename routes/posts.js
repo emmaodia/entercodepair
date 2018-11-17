@@ -2,10 +2,7 @@ const express = require('express');
 const router = express.Router();
 const postsController = require('../server/controllers').posts;
 
-router.get('/', (req, res) => res.status(200).json({
-  message: "This is the Posts route"
-})
-);
+router.get('/', postsController.list);
 
 router.post('/', postsController.create);
 
