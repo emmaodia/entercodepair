@@ -1,0 +1,19 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: npm start
+    volumes:
+      - .:/app/
+      - /app/node_modules
+    ports:
+      - "4000:4000"
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://entercodepair@postgres/entercodepair
+  postgres:
+    image: postgres:9.6.2-alpine
+    environment:
+      POSTGRES_USER: emmanuel
+      POSTGRES_DB: entercodepair
