@@ -20,11 +20,7 @@
     "password": "a46c585a639442ed5bf0be73c63e6bed41225b8080941e75ddcac40132aba5ed",
     "database": "ehiuqwviwnbfoo",
     "host": "ec2-174-129-18-42.compute-1.amazonaws.com",
-<<<<<<< HEAD
-    "dialect": "postgresg",
-=======
-    "dialect": "pg",
->>>>>>> c34c2ae97fd5ff293666b8963ebf7bf09ab28608
+    "dialect": "postgres",
     "port": "5432"
   }
 }
