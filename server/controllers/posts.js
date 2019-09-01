@@ -12,7 +12,7 @@ module.exports = {
   },
   list(req, res) {
     return Post
-    .all()
+    .findAll()
     .then(posts => res.status(200).json(posts))
     .catch(error => res.status(400).send(error));
   },
