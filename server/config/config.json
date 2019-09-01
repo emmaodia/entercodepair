@@ -1,5 +1,6 @@
 {
   "development": {
+    "use_env_variable": "DATABASE_URL",
     "username": "emmanuel",
     "password": null,
     "database": "entercodepair",
@@ -8,6 +9,7 @@
     "dialect": "postgres"
   },
   "test": {
+    "use_env_variable": "DATABASE_URL",
     "username": "root",
     "password": null,
     "database": "database_test",
@@ -16,6 +18,7 @@
     "dialect": "postgres"
   },
   "production": {
+    "use_env_variable": "DATABASE_URL",
     "username": "d7vime0dantiab",
     "password": "a46c585a639442ed5bf0be73c63e6bed41225b8080941e75ddcac40132aba5ed",
     "database": "ehiuqwviwnbfoo",
